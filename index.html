@@ -13,6 +13,24 @@
 </head>
 <body>
 
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-group">
+      <span class="topbar-item"><i class="fas fa-clock"></i> السبت – الخميس: 8 صباحاً – 8 مساءً</span>
+      <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> جدة، المملكة العربية السعودية</span>
+    </div>
+    <div class="topbar-group">
+      <a class="topbar-item" href="tel:+966501234567" dir="ltr"><i class="fas fa-phone-alt"></i> +966 50 123 4567</a>
+      <div class="topbar-social">
+        <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/966501234567" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- PRELOADER -->
 <div id="preloader"><div class="preloader-star"></div><div class="preloader-text">آفاق أعمال داخلية</div><div class="preloader-bar"><div class="preloader-progress"></div></div></div>
 
@@ -58,16 +76,21 @@
 <!-- HERO -->
 <section id="home" class="hero">
   <img class="hero-bg" src="https://images.pexels.com/photos/3935327/pexels-photo-3935327.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="فني تركيب بلاط أثناء العمل">
+  <div class="hero-frame"></div>
   <div class="hero-particles" id="heroParticles"></div>
-  <div class="arabesque-bg"></div>
   <div class="container hero-content">
-    <div class="ornament" data-aos="fade-down">&#10087; &#10087; &#10087;</div>
+    <div class="hero-kicker" data-aos="fade-down"><i class="fas fa-certificate"></i> شركة تشطيبات معتمدة في جدة</div>
     <h1 class="hero-headline" id="heroHeadline"></h1>
-    <p class="hero-subheadline" data-aos="fade-up" data-aos-delay="1800">أرضيات &middot; جدران &middot; رخام &middot; ترميم</p>
+    <p class="hero-subheadline" data-aos="fade-up" data-aos-delay="1800">أرضيات <span class="sep">◆</span> جدران <span class="sep">◆</span> رخام <span class="sep">◆</span> ترميم</p>
     <p class="hero-description" data-aos="fade-up" data-aos-delay="2300">نحوّل مساحاتك بإتقان وحرفية عالية. حلول متكاملة للبلاط والسيراميك والرخام بجودة تليق ببيتك ومشروعك.</p>
     <div class="hero-ctas" data-aos="fade-up" data-aos-delay="2800">
       <a href="#contact" class="btn btn-primary pulse-glow">اطلب عرض سعر مجاني</a>
       <a href="#portfolio" class="btn btn-outline">تصفح أعمالنا</a>
+    </div>
+    <div class="hero-stats" data-aos="fade-up" data-aos-delay="3200">
+      <div class="hero-stat"><b><span class="gold">10+</span></b><span>سنوات خبرة</span></div>
+      <div class="hero-stat"><b><span class="gold">500+</span></b><span>مشروع منجز</span></div>
+      <div class="hero-stat"><b><span class="gold">400+</span></b><span>عميل سعيد</span></div>
     </div>
   </div>
   <div class="scroll-indicator"><span>اسحب للأسفل</span><div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div></div>
@@ -76,7 +99,9 @@
 <!-- SERVICES -->
 <section id="services" class="services-section">
   <div class="container">
+    <p class="eyebrow" data-aos="fade-up">ما نقدمه لكم</p>
     <h2 class="section-title" data-aos="fade-up">خدمات<span class="gold">نا</span></h2>
+    <div class="title-divider" data-aos="fade-up"></div>
     <p class="section-subtitle text-center" data-aos="fade-up">نقدم مجموعة متكاملة من خدمات تركيب البلاط والتشطيبات الداخلية باحترافية عالية</p>
     <div class="services-grid">
       <div class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="card-inner">
@@ -112,7 +137,9 @@
 <!-- PORTFOLIO -->
 <section id="portfolio" class="portfolio-section">
   <div class="container">
+    <p class="eyebrow" data-aos="fade-up">معرض أعمالنا</p>
     <h2 class="section-title" data-aos="fade-up">أعمال<span class="gold">نا</span></h2>
+    <div class="title-divider" data-aos="fade-up"></div>
     <p class="section-subtitle text-center" data-aos="fade-up">مجموعة مختارة من مشاريع تركيب البلاط والترميم التي نفذناها في مختلف أحياء جدة</p>
     <div class="filter-buttons" data-aos="fade-up">
       <button class="filter-btn active" data-filter="all">الكل</button>
@@ -124,18 +151,18 @@
       <button class="filter-btn" data-filter="renovation">ترميم</button>
     </div>
     <div class="portfolio-grid">
-      <div class="portfolio-item" data-category="floor" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/5691533/pexels-photo-5691533.jpeg?auto=compress&cs=tinysrgb&w=600" alt="تركيب أرضيات فيلا" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات فيلا فاخرة</h4><p>حي النهضة، جدة</p></div></div>
-      <div class="portfolio-item" data-category="bathroom" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&w=600" alt="بلاط حمام فاخر" loading="lazy"></div><div class="portfolio-overlay"><h4>حمام فاخر بالرخام</h4><p>حي الحمراء، جدة</p></div></div>
-      <div class="portfolio-item" data-category="kitchen" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/4030055/pexels-photo-4030055.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ظلية مطبخ" loading="lazy"></div><div class="portfolio-overlay"><h4>ظلّية مطبخ حديثة</h4><p>حي السلامة، جدة</p></div></div>
-      <div class="portfolio-item" data-category="marble" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/4705833/pexels-photo-4705833.jpeg?auto=compress&cs=tinysrgb&w=600" alt="أرضيات رخام" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات صالة عرض رخام</h4><p>حي الفيصلية، جدة</p></div></div>
-      <div class="portfolio-item" data-category="wall" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/29181495/pexels-photo-29181495.jpeg?auto=compress&cs=tinysrgb&w=600" alt="تركيب بلاط جدران" loading="lazy"></div><div class="portfolio-overlay"><h4>جدران مكتب إداري</h4><p>طريق المدينة، جدة</p></div></div>
-      <div class="portfolio-item" data-category="renovation" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/18861859/pexels-photo-18861859.jpeg?auto=compress&cs=tinysrgb&w=600" alt="أدوات الترميم والبلاط" loading="lazy"></div><div class="portfolio-overlay"><h4>ترميم شامل لفيلا</h4><p>حي الخالدية، جدة</p></div></div>
-      <div class="portfolio-item" data-category="floor" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/25383577/pexels-photo-25383577.jpeg?auto=compress&cs=tinysrgb&w=600" alt="بلاط أرضيات بهو" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات بهو فندق</h4><p>الكورنيش، جدة</p></div></div>
-      <div class="portfolio-item" data-category="bathroom" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/4300078/pexels-photo-4300078.jpeg?auto=compress&cs=tinysrgb&w=600" alt="بلاط حمام منتجع" loading="lazy"></div><div class="portfolio-overlay"><h4>حمام منتجع صحي</h4><p>حي الروضة، جدة</p></div></div>
-      <div class="portfolio-item" data-category="kitchen" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/7173661/pexels-photo-7173661.jpeg?auto=compress&cs=tinysrgb&w=600" alt="مطبخ بالبلاط" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات مطعم</h4><p> البلد، جدة</p></div></div>
-      <div class="portfolio-item" data-category="marble" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/12956025/pexels-photo-12956025.jpeg?auto=compress&cs=tinysrgb&w=600" alt="رخام فيلا" loading="lazy"></div><div class="portfolio-overlay"><h4>رخام فيلا سكنية</h4><p>حي المرجان، جدة</p></div></div>
-      <div class="portfolio-item" data-category="wall" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/11427055/pexels-photo-11427055.jpeg?auto=compress&cs=tinysrgb&w=600" alt="جدران مستشفى بالبلاط" loading="lazy"></div><div class="portfolio-overlay"><h4>جدران مستشفى</h4><p>حي العزيزية، جدة</p></div></div>
-      <div class="portfolio-item" data-category="renovation" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/8488035/pexels-photo-8488035.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ترميم مكتب" loading="lazy"></div><div class="portfolio-overlay"><h4>ترميم مكتب شركة</h4><p>حي النزهة، جدة</p></div></div>
+      <div class="portfolio-item" data-category="floor" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/5691533/pexels-photo-5691533.jpeg?auto=compress&cs=tinysrgb&w=600" alt="تركيب أرضيات فيلا" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات فيلا فاخرة</h4><p>حي النهضة، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="bathroom" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/7018379/pexels-photo-7018379.jpeg?auto=compress&cs=tinysrgb&w=600" alt="بلاط حمام فاخر" loading="lazy"></div><div class="portfolio-overlay"><h4>حمام فاخر بالرخام</h4><p>حي الحمراء، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="kitchen" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/4030055/pexels-photo-4030055.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ظلية مطبخ" loading="lazy"></div><div class="portfolio-overlay"><h4>ظلّية مطبخ حديثة</h4><p>حي السلامة، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="marble" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/4705833/pexels-photo-4705833.jpeg?auto=compress&cs=tinysrgb&w=600" alt="أرضيات رخام" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات صالة عرض رخام</h4><p>حي الفيصلية، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="wall" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/29181495/pexels-photo-29181495.jpeg?auto=compress&cs=tinysrgb&w=600" alt="تركيب بلاط جدران" loading="lazy"></div><div class="portfolio-overlay"><h4>جدران مكتب إداري</h4><p>طريق المدينة، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="renovation" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/18861859/pexels-photo-18861859.jpeg?auto=compress&cs=tinysrgb&w=600" alt="أدوات الترميم والبلاط" loading="lazy"></div><div class="portfolio-overlay"><h4>ترميم شامل لفيلا</h4><p>حي الخالدية، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="floor" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/25383577/pexels-photo-25383577.jpeg?auto=compress&cs=tinysrgb&w=600" alt="بلاط أرضيات بهو" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات بهو فندق</h4><p>الكورنيش، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="bathroom" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/4300078/pexels-photo-4300078.jpeg?auto=compress&cs=tinysrgb&w=600" alt="بلاط حمام منتجع" loading="lazy"></div><div class="portfolio-overlay"><h4>حمام منتجع صحي</h4><p>حي الروضة، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="kitchen" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/7173661/pexels-photo-7173661.jpeg?auto=compress&cs=tinysrgb&w=600" alt="مطبخ بالبلاط" loading="lazy"></div><div class="portfolio-overlay"><h4>أرضيات مطعم</h4><p> البلد، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="marble" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/12956025/pexels-photo-12956025.jpeg?auto=compress&cs=tinysrgb&w=600" alt="رخام فيلا" loading="lazy"></div><div class="portfolio-overlay"><h4>رخام فيلا سكنية</h4><p>حي المرجان، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="wall" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/11427055/pexels-photo-11427055.jpeg?auto=compress&cs=tinysrgb&w=600" alt="جدران مستشفى بالبلاط" loading="lazy"></div><div class="portfolio-overlay"><h4>جدران مستشفى</h4><p>حي العزيزية، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
+      <div class="portfolio-item" data-category="renovation" data-aos="zoom-in"><div class="arch-frame"><img src="https://images.pexels.com/photos/8488035/pexels-photo-8488035.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ترميم مكتب" loading="lazy"></div><div class="portfolio-overlay"><h4>ترميم مكتب شركة</h4><p>حي النزهة، جدة</p><span class="overlay-btn"><i class="fas fa-arrow-left"></i></span></div></div>
     </div>
   </div>
 </section>
@@ -146,6 +173,7 @@
     <div class="about-grid">
       <div class="about-content" data-aos="fade-left">
         <div class="ornament right">&#10087; &#10087; &#10087;</div>
+        <p class="eyebrow" style="text-align:right">من نحن</p>
         <h2 class="about-title">عن <span class="gold">آفاق أعمال داخلية</span></h2>
         <p class="about-text">آفاق أعمال داخلية اسم موثوق في جدة لخدمات تركيب البلاط والرخام والترميم الداخلي. بخبرة تتجاوز عشر سنوات وفريق من الحرفيين المهرة، نقدم جودة عمل عالية في كل مشروع — من المنازل السكنية إلى المنشآت التجارية.</p>
         <p class="about-text">نفخر بدقة التفاصيل لدينا واستخدامنا مواد فاخرة والتزامنا برضا العملاء. كل مشروع نتعامل معه بعناية واحترافية لنضمن نتائج تدوم طويلاً.</p>
@@ -170,7 +198,9 @@
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="testimonials-section">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">آراء <span class="gold">عملائنا</span></h2>
+    <p class="eyebrow" data-aos="fade-up">شهادات عملائنا</p>
+    <h2 class="section-title light" data-aos="fade-up">آراء <span class="gold">عملائنا</span></h2>
+    <div class="title-divider" data-aos="fade-up"></div>
     <div class="testimonial-carousel" data-aos="fade-up">
       <div class="testimonial-track" id="testimonialTrack">
         <div class="testimonial-card"><div class="quote-mark">&rdquo;</div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testimonial-text">"قام آفاق أعمال داخلية بعمل مذهل في أرضيات فللتنا. فريق محترم ومنتظم والجودة كانت فوق الممتازة. سعداء جداً بالنتيجة."</p><div class="testimonial-author"><div class="author-avatar">أ</div><div><h4>أحمد الفيصل</h4><span>مالك فيلا، جدة</span></div></div></div>
@@ -189,7 +219,9 @@
 <section id="contact" class="contact-section">
   <div class="arabesque-light"></div>
   <div class="container">
+    <p class="eyebrow" data-aos="fade-up">تواصل معنا</p>
     <h2 class="section-title light" data-aos="fade-up">تواصل <span class="gold">معنا</span></h2>
+    <div class="title-divider" data-aos="fade-up"></div>
     <p class="section-subtitle text-center contact-sub" data-aos="fade-up">لديك مشروع؟ راسلنا اليوم واحصل على عرض سعر مجاني خلال 24 ساعة</p>
     <div class="contact-grid">
       <form id="contactForm" class="contact-form" data-aos="fade-left">
