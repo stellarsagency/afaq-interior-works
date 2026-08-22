@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stellarsagency.github.io/afaq-interior-works/sitemap.xml

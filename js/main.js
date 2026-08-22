@@ -150,6 +150,23 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.reset();
   });
 
+  /* 11b. FAQ ACCORDION */
+  document.querySelectorAll(".faq-item").forEach(item => {
+    item.querySelector(".faq-q")?.addEventListener("click", () => {
+      const open = item.classList.contains("active");
+      document.querySelectorAll(".faq-item").forEach(fi => {
+        fi.classList.remove("active");
+        const a = fi.querySelector(".faq-a");
+        if (a) a.style.maxHeight = null;
+      });
+      if (!open) {
+        item.classList.add("active");
+        const a = item.querySelector(".faq-a");
+        if (a) a.style.maxHeight = a.scrollHeight + "px";
+      }
+    });
+  });
+
   /* 12. CONTACT FORM */
   document.getElementById("contactForm")?.addEventListener("submit", e => {
     e.preventDefault();

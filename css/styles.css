@@ -281,6 +281,24 @@ img{max-width:100%}
 .back-to-top.visible{opacity:1;visibility:visible}
 .back-to-top:hover{background:var(--grad-gold);color:var(--navy);transform:translateY(-4px);border-color:transparent}
 
+/* ============ FAQ ============ */
+.faq-section{padding:110px 0 90px;background:var(--ivory)}
+.faq-list{max-width:840px;margin:0 auto}
+.faq-item{background:var(--white);border-radius:18px;margin-bottom:16px;border:1px solid var(--line);box-shadow:0 4px 16px rgba(16,32,58,.06);overflow:hidden;transition:var(--tr)}
+.faq-item:hover{border-color:rgba(212,175,106,.55)}
+.faq-item.active{border-color:var(--gold);box-shadow:0 12px 30px rgba(154,123,45,.15)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:24px 30px;text-align:right;font-family:'Cairo',sans-serif;font-size:1.05rem;font-weight:800;color:var(--navy-2);transition:var(--tr)}
+.faq-item.active .faq-q{color:var(--gold-deep)}
+.faq-q i{width:34px;height:34px;flex-shrink:0;border-radius:50%;background:radial-gradient(circle at 30% 25%,#f7e7b0,#d4af6a 62%,#9a7b2d);color:var(--navy);font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:transform .35s ease}
+.faq-item.active .faq-q i{transform:rotate(135deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.faq-a p{padding:0 30px 26px;color:#5a6472;line-height:2}
+
+.service-areas{margin-top:8px;padding-top:22px;border-top:1px dashed rgba(212,175,106,.3)}
+.service-areas h4{font-family:'Amiri',serif;color:var(--white);font-size:1.05rem;margin-bottom:14px}
+.service-areas span{display:inline-block;padding:6px 16px;margin:0 0 10px 10px;border-radius:60px;background:rgba(212,175,106,.09);border:1px solid rgba(212,175,106,.35);color:#e9dfc4;font-size:.85rem;transition:var(--tr)}
+.service-areas span:hover{background:var(--grad-gold);color:var(--navy)}
+
 /* ============ NEWSLETTER ============ */
 .newsletter-section{padding:0 0 90px;background:var(--ivory)}
 .newsletter-box{background:var(--grad-navy);border:1px solid rgba(212,175,106,.35);border-radius:28px;padding:56px 40px;text-align:center;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(8,18,38,.3)}
