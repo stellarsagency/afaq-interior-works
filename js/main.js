@@ -96,17 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: .35 }).observe(statsRow);
   }
 
-  /* 8. SERVICE CARD TILT (subtle, keeps flip working) */
-  document.querySelectorAll(".card-front").forEach(f => {
-    f.addEventListener("mousemove", e => {
-      const r = f.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width - .5;
-      const y = (e.clientY - r.top) / r.height - .5;
-      f.parentElement.style.transform = `rotateY(${x*14}deg) rotateX(${-y*14}deg)`;
-      f.parentElement.style.transition = "transform .08s";
-    });
-    f.addEventListener("mouseleave", () => { f.parentElement.style.transform = ""; f.parentElement.style.transition = ""; });
-  });
+  /* 8. SERVICE CARDS — pure CSS flip (JS tilt removed: it broke the flip) */
 
   /* 9. PORTFOLIO FILTER */
   document.querySelectorAll(".filter-btn").forEach(btn => {
