@@ -281,6 +281,21 @@ img{max-width:100%}
 .back-to-top.visible{opacity:1;visibility:visible}
 .back-to-top:hover{background:var(--grad-gold);color:var(--navy);transform:translateY(-4px);border-color:transparent}
 
+/* ============ NEWSLETTER ============ */
+.newsletter-section{padding:0 0 90px;background:var(--ivory)}
+.newsletter-box{background:var(--grad-navy);border:1px solid rgba(212,175,106,.35);border-radius:28px;padding:56px 40px;text-align:center;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(8,18,38,.3)}
+.newsletter-box::before{content:'';position:absolute;top:0;right:15%;left:15%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.newsletter-box::after{content:'';position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70'%3E%3Cpath d='M35 6 L43 20 L57 13 L50 27 L64 35 L50 43 L57 57 L43 50 L35 64 L27 50 L13 57 L20 43 L6 35 L20 27 L13 13 L27 20 Z' fill='none' stroke='%23d4af6a'/%3E%3C/svg%3E");pointer-events:none}
+.newsletter-ornament{color:var(--gold);letter-spacing:.9em;font-size:1rem;margin-bottom:14px;text-indent:.9em}
+.newsletter-box h3{font-family:'Amiri',serif;font-size:2rem;color:var(--white);margin-bottom:8px;position:relative}
+.newsletter-box>p{color:rgba(255,255,255,.68);margin-bottom:30px;position:relative}
+.newsletter-form{display:flex;gap:12px;max-width:520px;margin:0 auto 18px;position:relative}
+.newsletter-form input{flex:1;padding:16px 26px;border-radius:70px;border:1px solid rgba(212,175,106,.4);background:rgba(255,255,255,.07);color:var(--white);font-size:.98rem;text-align:center;transition:var(--tr)}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.5)}
+.newsletter-form input:focus{outline:none;border-color:var(--gold);background:rgba(212,175,106,.08);box-shadow:0 0 0 4px rgba(212,175,106,.12)}
+.newsletter-note{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.45);font-size:.82rem;position:relative}
+.newsletter-note i{color:var(--gold)}
+
 /* ============ FOOTER ============ */
 .footer{background:linear-gradient(180deg,var(--navy-2),var(--navy));text-align:center;position:relative}
 .footer::before{content:'';position:absolute;top:0;right:0;left:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
@@ -347,6 +362,8 @@ img{max-width:100%}
   .testimonial-dots{margin-bottom:66px}
   .footer-grid{grid-template-columns:1fr}
   .contact-form{padding:26px 20px}
+  .newsletter-box{padding:42px 22px}
+  .newsletter-form{flex-direction:column}
   .whatsapp-float,.call-float{width:54px;height:54px;bottom:20px}
   .whatsapp-float{left:20px}.call-float{right:20px}
   .call-float i{font-size:1.35rem}

@@ -143,7 +143,14 @@ document.addEventListener("DOMContentLoaded", () => {
     restart();
   }
 
-  /* 11. CONTACT FORM */
+  /* 11. NEWSLETTER */
+  document.getElementById("newsletterForm")?.addEventListener("submit", e => {
+    e.preventDefault();
+    alert("تم تسجيل اشتراكك بنجاح! ستصلك أحدث العروض والنصائح قريباً.");
+    e.target.reset();
+  });
+
+  /* 12. CONTACT FORM */
   document.getElementById("contactForm")?.addEventListener("submit", e => {
     e.preventDefault();
     const form = e.target;
