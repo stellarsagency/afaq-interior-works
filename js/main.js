@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* 5. HERO TYPING (Arabic) */
   const headline = document.getElementById("heroHeadline");
   if (headline) {
-    const text = "خدمات احترافية للبلاط والسيراميك والرخام في جدة";
+    const text = "فني ومعلم بلاط وسيراميك ورخام في جدة";
     let i = 0;
     const cursor = document.createElement("span");
     cursor.className = "typing-cursor";
