@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* 0. IMAGE FALLBACK — use stock photo until owner adds real image */
+  document.querySelectorAll("img[data-fallback]").forEach(img => {
+    const swap = () => { if (img.naturalWidth === 0) img.src = img.dataset.fallback; };
+    if (img.complete) swap();
+    img.addEventListener("error", swap);
+  });
+
   /* 1. PRELOADER */
   const preloader = document.getElementById("preloader");
   if (preloader) {
