@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* 12. CONTACT FORM */
+  /* 12. CONTACT FORM → WhatsApp */
   document.getElementById("contactForm")?.addEventListener("submit", e => {
     e.preventDefault();
     const form = e.target;
@@ -185,7 +185,21 @@ document.addEventListener("DOMContentLoaded", () => {
       if (bad) ok = false;
     });
     if (!ok) return;
-    alert("شكراً لتواصلك معنا! تم إرسال طلبك بنجاح وسنعاود الاتصال بك قريباً.");
+    const name = document.getElementById("fullName").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("serviceType").value;
+    const message = document.getElementById("message").value.trim();
+    const serviceMap = { floor: "تركيب بلاط الأرضيات", wall: "تركيب بلاط الجدران", kitchen: "بلاط الحمامات والمطابخ" };
+    const serviceLabel = serviceMap[service] || service;
+    const text = encodeURIComponent(
+      "مرحباً آفاق أعمال داخلية\n" +
+      "أريد الاستفسار عن خدمة: " + serviceLabel + "\n\n" +
+      "الاسم: " + name + "\n" +
+      "الجوال: " + phone + "\n" +
+      "تفاصيل: " + message
+    );
+    window.open("https://wa.me/966539815421?text=" + text, "_blank");
+    alert("شكراً لتواصلك معنا! جارٍ فتح واتساب لإرسال طلبك.");
     form.reset();
   });
 
